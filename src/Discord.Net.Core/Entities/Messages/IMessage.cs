@@ -208,6 +208,15 @@ namespace Discord
         /// <seealso cref="IEmote"/>
         Task RemoveReactionAsync(IEmote emote, ulong userId, RequestOptions options = null);
         /// <summary>
+        ///     Removes all reactions of the same emoji from message.
+        /// </summary>
+        /// <param name="emote">The emoji used to react to this message.</param>
+        /// <param name="options">The options to be used when sending the request.</param>
+        /// <returns>
+        ///     A task that represents the asynchronous operation for removing reactions to this message.
+        /// </returns>
+        Task RemoveReactionsAsync(IEmote emote, RequestOptions options = null);
+        /// <summary>
         ///     Removes all reactions from this message.
         /// </summary>
         /// <param name="options">The options to be used when sending the request.</param>
